@@ -21,7 +21,7 @@ objetos mantêm fortes referências entre si, impedindo que o ARC (Automatic Ref
 
 - A `ContentView` mantém uma referência forte ao `LeakViewModel`.
 - O `LeakViewModel` mantém uma referência forte à `ContentView`.
-- Mesmo depois que a `LeakyDetailView` desaparece (ao navegar de volta), essa referência circular impede que o ARC desalocar a memória, criando um memory leak.
+- Mesmo depois que a `LeakyDetailView` desaparece (ao navegar de volta), essa referência circular impede que o ARC desaloque a memória, criando um memory leak.
 
 ### Como Verificar o Memory Leak:
 
